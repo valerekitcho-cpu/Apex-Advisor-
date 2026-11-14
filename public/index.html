@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Advisor — Agent IA Exécutif</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>APEX ADVISOR <span class="badge">Pass Découverte 2,99 €</span></h1>
+    <p class="tagline">Conseiller exécutif — plan d'action chiffré en moins de 30 secondes.</p>
+</header>
+
+<main class="chat-container">
+    <div class="messages" id="chatBox" aria-live="polite"></div>
+
+    <form class="input-area" id="chatForm">
+        <input
+            type="text"
+            id="userInput"
+            placeholder="Ex: Comment négocier un contrat de 50 000 € ?"
+            autocomplete="off"
+            maxlength="2000"
+            aria-label="Votre situation"
+        >
+        <button type="submit" id="sendBtn">Analyser</button>
+    </form>
+
+    <p class="quota" id="quotaLine"></p>
+</main>
+
+<div class="upgrade-bar" id="upgradeBar"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>

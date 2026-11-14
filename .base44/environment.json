@@ -1,0 +1,27 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "ANTHROPIC_API_KEY",
+      "description": "Clé API Anthropic (console.anthropic.com → API Keys). Requise pour générer les analyses Apex Advisor ; sans elle l'interface fonctionne mais chaque analyse renvoie une erreur de configuration.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "CHARIOW_ESSENTIEL_URL",
+      "description": "Lien de paiement Chariow du pass Essentiel (20 €/mois), affiché dans la barre de mise à niveau.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "CHARIOW_PRO_URL",
+      "description": "Lien de paiement Chariow du pass Pro (30 €/mois), affiché dans la barre de mise à niveau.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "CHARIOW_VIP_URL",
+      "description": "Lien de paiement Chariow du pass VIP Temps Réel (150 €/mois), affiché dans la barre de mise à niveau.",
+      "requiredAtBoot": false
+    }
+  ]
+}
